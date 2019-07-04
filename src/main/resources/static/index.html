@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Unix-Web-Helper</title>
+</head>
+<body>
+
+<div class="container">
+<div class="row" id="verify_div">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <div class="form-horizontal" autocomplete="off" class="col-md-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="请输入管理员密码"
+                                       id="unix-passwd">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" id="btn-verify">密码验证</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="test_div" hidden>
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <div class="form-horizontal" autocomplete="off" class="col-md-12">
+                    <div class="form-group">
+                        <label for="unix_cmd" class="col-md-2 control-label">执行命令</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" rows="2" id="unix_cmd" placeholder=""></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <textarea class="form-control" rows="10" id="unix_result" wrap="off"
+                                      style="overflow:scroll;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="file_div" hidden>
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <div class="form-horizontal" autocomplete="off" class="col-md-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="请输入查看的文件路径，'$'（井号）表示项目根目录"
+                                       id="file-path">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" id="btn-load">加载</button>
+                                    <button class="btn btn-info" type="button" id="btn-update">更新</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <textarea class="form-control" rows="15" id="file-text" wrap="off"
+                                      style="overflow:scroll;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- /container -->
+
+<script src="jquery/jquery-1.12.4.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/unix-web-helper.js"></script>
+
+</body>
+</html>
