@@ -1,6 +1,8 @@
 # unix-web-helper
 ## 简介
 >&nbsp;&nbsp;&nbsp;&nbsp;unix-web-helper是一个拥有鉴权、shell命令执行、文件读写功能的Unix/Linux Web操作终端。 
+## 程序运行
+>&nbsp;&nbsp;&nbsp;&nbsp;直接使用命令 java -jar unix-web-helper-1.0-SNAPSHOT.jar 即可
 ## 鉴权
 >&nbsp;&nbsp;&nbsp;&nbsp;用户输入密码（初始密码abc123保存在SecurityService类中），验证通过后才能进行下面操作。
 ![image](https://github.com/haoshen/unix-web-helper/blob/master/pic/passwd_verify.jpg)
